@@ -1,0 +1,354 @@
+.bodyImage{
+    width: 100%;
+    position: relative;
+}
+.parallax {
+  background-image: url('http://gobi.mn/imgs/hehem.jpg');
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+
+
+.imageOverlaySide {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .imageHover{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlayLeftSide {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0px;
+    background-color: #d6c2b2;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    opacity: 0.7;
+  }
+  .overlayBottomSide {
+  text-align: center;
+  background-color: #d6c2b2;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  right: 0;
+  overflow: hidden;
+  width: 99%;
+  height: 0;
+  transition: .5s ease;
+  opacity: 0.7;
+} 
+.bodyImage:hover .overlayBottomSide {
+  height: 30%;
+}
+
+.slide:hover .hoverDesc {
+  height: 30%;
+  opacity: 1 !important;
+}
+.hoverDesc:hover{
+  opacity: 1 !important;
+}
+  .bodyImage:hover .overlayLeftSide {
+    width: 100%;
+    left: 0;
+  }
+  .overlayRightSide {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    background-color: #d6c2b2;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    opacity: 0.7;
+  }
+  
+  .bodyImage:hover .overlayRightSide {
+    width: 100%;
+    left: 0;
+  }
+  
+  .textSide {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+.bodyImage img{
+    width: 100%;
+    padding: 3px;
+}
+.slide{
+    width: 100%;    
+}
+.product{
+    width: 100%;    
+}
+.slide img{
+    width: 90%;
+    height: 80%;
+}
+.slideImg{
+    padding-top: 10%;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    width: 100%;
+    
+}
+.midDesc::before{
+  position: absolute;
+  left: 0%;
+  top: 60px;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 1s ease-out;
+}
+.midDesc:hover::before{
+  width: 100%;
+}
+.hoverImg{
+  padding-top: 10%;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  width: 100%;
+  opacity: 1;
+}
+.middle{
+  transition: .5s ease;
+  opacity: 0;
+  background-color: slategrey;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.bodyImage:hover .midImage {
+  opacity: 0.5;
+}
+
+.bodyImage:hover .middle {
+  opacity: 1;
+}
+.midImage{
+
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.midDesc{
+  color: white;
+  border-radius: 10px;
+  margin-left: -35%;
+  font-size: 14px;
+  padding: 6px 12px;
+  letter-spacing: 1px;
+  width: 170%;
+  text-align: center;
+  cursor: pointer;
+}
+.details{
+  position: absolute;
+  bottom: 2%;
+  left: 35%;
+  letter-spacing: 1px;
+  color: white;
+  text-align: center;
+}
+.details::before{
+  position: absolute;
+  left: 50%;
+  top: -9px;
+  content: "";
+  width: 25px;
+  height: 2px;
+  transform: translateX(-50%);
+  background-color: #fff;
+  transition: all 1s ease-out;
+}
+.details:hover::before{
+  width: 100%;
+}
+
+.hoverImg:hover{
+  
+  
+}
+.hoverDesc{
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  right: 0;
+  overflow: hidden;
+  width: 83%;
+  height: 0;
+  transition: .5s ease;
+  opacity: 1 !important;
+  color: white;
+}
+
+
+.product img{
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+    margin-top: -20px !important;
+}
+.productImg{
+    padding-top: 10%;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+.padd{
+    padding: 0.5% !important;
+    
+}
+.mainImg{
+    width: 100%;
+    padding-top: 20px;
+}
+
+.post{
+    width: 100%;
+}
+.postDesc{
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+    width: 20%;
+    margin-left: 40%;
+
+}
+.productImg .imgDesc{
+    opacity: 1;
+    font-size: 13px;
+    color: #212121;
+    font-family: 'Times New Roman', Times, serif;
+}
+.productImg .imgPrice{
+    cursor: pointer;
+    color: #212121;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+.button3Img {
+  opacity: 0.5;
+border: none;
+padding: 5px 12px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 15px;
+background-color: none;
+margin-top: 0;
+cursor: pointer;
+border-radius: 5px;
+color: black;
+border: 2px solid #e7e7e7;
+}
+.button {
+opacity: 0.5;
+border: none;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+background-color: none;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 5px;
+color: black;
+border: 2px solid #e7e7e7;
+}
+
+.button3Img span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  
+}
+
+.button3Img span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -40px;
+  transition: 0.5s;
+}
+
+.button3Img:hover span {
+  padding-right: 25px;
+}
+
+.button3Img:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -40px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

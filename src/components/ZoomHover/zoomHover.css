@@ -1,0 +1,40 @@
+.magnify{
+    width: 97%;
+    border-width: 12px;
+    border-color: black;
+    border: 10px;
+    position: relative;
+}
+.magnify .border{
+
+}
+.zoomMagnify{
+    border: 10px solid transparent;
+    
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.magnifyText{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 250%;
+}
+.zoom{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.zoomHover{
+    transition: all 0.5s;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 100%;
+    transform: scale(1);
+}
+.zoom:hover .zoomHover{
+    transform: scale(1.2);
+}
